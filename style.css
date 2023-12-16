@@ -1,0 +1,119 @@
+body{
+    background-color: #2f3542;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-transform: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+h1{
+   line-height: 40px;
+    color: white;
+    text-align: center;
+    
+}
+
+.gamecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+
+}
+
+.box{
+border: 2px solid black;
+font-size: 8vw;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.box input{
+    border: 4px solid #eccc68;
+    background: #2f3542;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    width: 100px;
+    cursor: pointer;
+
+}
+.creat p{
+  text-align: right;
+  color: white;
+}
+.txt-1:hover{
+background-color: rgb(241, 173, 148);
+}
+.btn-1{
+margin-left: 80px;
+background-color: #ff4757;
+color: white;
+border: none;
+border-radius: 12px;
+text-align: center;
+cursor: pointer;
+padding: 5px 20px 5px 20px;
+}
+.btn-1:hover{
+    background: none;
+    border: 2px solid #ff4757;
+    color: white;
+}
+:disabled{
+color: red;
+background-color: white;
+}
+.second{
+    color: #eccc68;
+    font-size:8vw;
+}
+@media only screen and (max-width: 500px) {
+    .gamecontainer {
+      display: block;
+      text-align: center;
+    }
+    .second{
+        width: 80%;
+    text-align: center;
+    }
+    .second p{
+        text-align: center;
+        width: 120%;
+    }
+  }
+
+
+
